@@ -53,17 +53,17 @@ fieldset {
     /* Line Breaks */
    
 
-    .signup-divhr1 {
+    .signup-div-large {
         background: #28323c;
         height: 4px;
-        max-width: 92.5%;
+        max-width: 95%;
         margin: 0 auto;
     }
 
-    .signup-divhr2 {
+    .signup-div-small {
         background: #28323c;
         height: 2px;
-        max-width: 92.5%;
+        max-width: 95%;
         margin: 3px auto;
     }
 
@@ -71,10 +71,8 @@ fieldset {
     /* Contact Information Section */
 
     .contact-legend {
-        
-        display: block;
         margin-top: 3px;
-        padding: 20px 15px;
+        padding: 20px 0;
         font-weight: bold;
         font-size: 1.15em;
     }
@@ -87,7 +85,7 @@ fieldset {
     .contact-flex label {
         font-weight: 300;
         font-size: .9em;
-        margin: 10px 0;
+        margin: 12px 0;
     }
 
     .contact-flex label:first-child {
@@ -97,7 +95,8 @@ fieldset {
     .contact-flex input, .contact-flex select {
         background-color: #edefef;
         border-radius: 4px;
-        border-style: none;         
+        border-style: none; 
+        margin-bottom: 10px;        
     }
     .contact-flex input {
         padding: 16px;
@@ -120,7 +119,6 @@ fieldset {
         text-indent: 10px;
         font-weight: lighter;
         color: #a3aeac;
-        font-style: italic;
     }
 
     .contact-input:focus {
@@ -131,19 +129,64 @@ fieldset {
     
 
     #zipcode {
-        max-width: 50%
+        max-width: 50%;
     }
    
 
     /* Newsletter Section */
 
+    .newsletter-legend {
+        margin-top: 3px;
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 1.15em;
+    }
+
         /* Newsletters Selection Section */
+        
+        .newsletter-div {
+            font-weight: 300;
+            line-height: 150%;
+        }
+
+        .newsletter-div p {
+            font-weight: lighter;
+            font-size: .95em;
+        }
+
+        .newletter-div label, .newsletter-div input {
+            display: inline-block;        
+            margin: 10px 0;
+        }
+
+        .newsletter-div input {
+            margin-right: 8px;
+        }
+
+        .newsletter-div label[for="other_topics"] {
+            padding-top: 10px;
+        }
+
+        .other-topics label {
+           display: block;
+            margin: 20px 0;
+        }
+
+        .other-topics-textarea {
+            background-color: #edefef;
+            height: 100px;
+            width: 100%;
+            border-style: none;
+            border-radius: 4px;
+            resize: none;
+        }
 
         /* Newsletter Format Section*/
 
         input[type="radio"] {
             display: inline-block;
         }
+
 
 
 /* Footer Section */

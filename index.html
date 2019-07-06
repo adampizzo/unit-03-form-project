@@ -20,14 +20,14 @@
                 <h2 class="signup-h2">Signup for our newsletter</h2>
                 <p class="signup-p">Get the latest news on how your code is doing right in your inbox</p>
             
-                <div class="signup-divhr1"></div>
-                <div class="signup-divhr2"></div>
+                <div class="signup-div-large"></div>
+                <div class="signup-div-small"></div>
             </section>
 
             <section>
-                <form>
-                    <legend class="contact-legend">Contact Information</legend>
+                <form>                    
                     <fieldset>
+                        <legend class="contact-legend">Contact Information</legend>
                         <div class="contact-flex">
                             <label class="contact-item contact-label" for="name">Full Name</label>
                             <input class="contact-item contact-input req" type="text" id="name" name="user_name" placeholder="Required">
@@ -99,40 +99,48 @@
                                     <option value="WI">Wisconsin</option>
                                     <option value="WY">Wyoming</option>
                             </select>	
-
                             <label class="contact-item contact-label" for="zipcode">Zip Code</label>
                             <input class="contact-item contact-input" type="text" id="zipcode" name="user_zipcode">
                         </div>
                     </fieldset>
-                    <hr>
-                    <div>
-                        <legend>Newsletter</legend>
+                    <div class="signup-div-small"></div>
+                    <div class="newsletter-div">
                         <fieldset>
+                            <legend class="newsletter-legend">Newsletter</legend>
                             <p>Select the newsletters you would like to receive</p>
                             <div>
-                                <input type="checkbox" id="html_news" name="html_news" checked> 
-                                <label for="html_news">HTML News</label>
-                                
-                                <input type="checkbox" id="css_news" name="css_news">
-                                <label for="css_news">CSS News</label>
-                                
-                                <input type="checkbox" id="js_news" name="js_news">
-                                <label for="js_news">Javascript News</label>
+                                <div>
+                                    <input type="checkbox" id="html_news" name="html_news" checked> 
+                                    <label for="html_news">HTML News</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="css_news" name="css_news">
+                                    <label for="css_news">CSS News</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="js_news" name="js_news">
+                                    <label for="js_news">Javascript News</label>
+                                </div>
                             </div>
 
                             <p>Newsletter format</p>                            
-                            <input type="radio" id="format_html" name="format" checked>
-                            <label for="format_html">HTML</label>
-                            
-                            <input type="radio" name="format" id="format_plaintext">
-                            <label for="format_plaintext">Plain text</label>
-                            
                             <div>
+                                <input type="radio" id="format_html" name="format" checked>
+                                <label for="format_html">HTML</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="format" id="format_plaintext">
+                                <label for="format_plaintext">Plain text</label>
+                            </div>
+                            <div class="other-topics">
                                 <label for="other_topics">Other topics you'd like to hear about</label>
                                 <textarea class="other-topics-textarea" name="other_topics" id="other_topics"></textarea>
                             </div>
 
                         </fieldset>
+                    </div>
+                    <div class="sign-up">
+                        
                     </div>
                 </form>
             </section>
