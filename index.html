@@ -19,13 +19,10 @@
             <section class="signup-info">
                 <h2 class="signup-h2">Signup for our newsletter</h2>
                 <p class="signup-p">Get the latest news on how your code is doing right in your inbox</p>
+            
+                <div class="signup-divhr1"></div>
+                <div class="signup-divhr2"></div>
             </section>
-
-            <hr class="signup-hr1">
-            <hr class="signup-hr2">
-
-            <div class="signup-divhr1"></div>
-            <div class="signup-divhr2"></div>
 
             <section>
                 <form>
@@ -41,12 +38,15 @@
                             <label class="contact-item contact-label" for="phone">Phone Number</label>
                             <input class="contact-item contact-input" type="text" id="phone" name="user_phone">
 
+                            <label class="contact-item contact-label" for="street">Street Address</label>
+                            <input class="contact-item contact-input" type="text" id="street" name="user_street">
+
                             <label class="contact-item contact-label" for="city">City</label>
                             <input class="contact-item contact-input" type="text" id="city" name="user_city">
 
-                            <label for="state">State</label>
-                            <select id="state" name="state"> <!-- Thank you to: https://www.freeformatter.com/usa-state-list-html-select.html -->
-                                    <option value="" disabled selected>Choose State</option>
+                            <label class="contact-state-lbl contact-item contact-label" for="state">State</label>
+                            <select class="contact-state-select contact-item contact-input" id="state" name="state"> <!-- Thank you to: https://www.freeformatter.com/usa-state-list-html-select.html -->
+                                    <option value="0" disabled hidden selected>Choose State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
