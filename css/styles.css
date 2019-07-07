@@ -276,7 +276,7 @@ fieldset {
 
     /* Wrapper Width Limit */
     .main-wrapper {
-        max-width: 600px;
+        max-width: 60vw;
         margin: 0 auto;
     }
 
