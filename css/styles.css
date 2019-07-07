@@ -66,6 +66,9 @@ fieldset {
         margin: 3px auto;
     }
 
+    form .line-div-small {
+        margin-bottom: 8px;
+    }
 
     /* Contact Information Section */
 
@@ -124,8 +127,6 @@ fieldset {
         padding: 16px;
     }
 
-   
-
     .contact-state-select {
         display: block;
         height: 50px;
@@ -133,13 +134,6 @@ fieldset {
         font-weight: lighter;
         color: #a3aeac;
     }
-
-    
-
-    
-
-
-    
 
     #zipcode {
         max-width: 50%;
@@ -209,8 +203,8 @@ fieldset {
 
 
         .other-topics-textarea {
-            background-color: #edefef;
-            color: #28323c;
+            background-color: #28323c;
+            color: white;
             display: block;
             height: 100px;
             width: 100%;
@@ -218,12 +212,15 @@ fieldset {
             border-style: none;
             border-radius: 4px;
             resize: none;
-            padding: 0;
+            padding: 5px;
+            box-shadow: 0 0 12px white;
         }
 
         .other-topics-textarea:hover,
         .other-topics-textarea:focus {
             box-shadow: 0 0 8px white;
+            background-color: #edefef;
+            color: #28323c
         }
 
         /* Newsletter Format Section*/

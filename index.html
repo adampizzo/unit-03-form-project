@@ -33,7 +33,7 @@
                             <input class="contact-input req" type="text" id="name" name="user_name" placeholder="Required" required>
 
                             <label class="contact-label" for="email">Email Address</label>
-                            <input class="contact-input" pattern="^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="text" id="email" name="user_email" placeholder="Required" required> <!-- Pattern adapted from https://html5-tutorial.net/form-validation/validating-email/-->
+                            <input class="contact-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="text" id="email" name="user_email" placeholder="Required" required> <!-- Pattern adapted from https://html5-tutorial.net/form-validation/validating-email/-->
 
                             <label class="contact-label" for="phone">Phone Number</label>
                             <input class="contact-input" type="text" id="phone" name="user_phone" placeholder="(XXX)XXX-XXXX">
@@ -147,7 +147,16 @@
         </main>
 
         <footer class="main-footer">
-            <div class="footer-copyright">Copyright The Code Review</div>
+            <div class="footer-copyright">Copyright The Code Review
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                    </a>
+                </p>
+            </div>  
         </footer>
+        
     </body>
 </html>
