@@ -20,32 +20,32 @@
                 <h2 class="signup-h2">Signup for our newsletter</h2>
                 <p class="signup-p">Get the latest news on how your code is doing right in your inbox</p>
             
-                <div class="signup-div-large"></div>
-                <div class="signup-div-small"></div>
+                <div class="line-div-large"></div>
+                <div class="line-div-small"></div>
             </section>
 
-            <section>
-                <form>                    
+            <div>
+                <form action="index.html" method="post">                    
                     <fieldset>
                         <legend class="contact-legend">Contact Information</legend>
                         <div class="contact-flex">
-                            <label class="contact-item contact-label" for="name">Full Name</label>
-                            <input class="contact-item contact-input req" type="text" id="name" name="user_name" placeholder="Required">
+                            <label class="contact-label" for="name">Full Name</label>
+                            <input class="contact-input req" type="text" id="name" name="user_name" placeholder="Required" required>
 
-                            <label class="contact-item contact-label" for="email">Email Address</label>
-                            <input class="contact-item contact-input" type="text" id="email" name="user_email" placeholder="Required">
+                            <label class="contact-label" for="email">Email Address</label>
+                            <input class="contact-input" pattern="^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="text" id="email" name="user_email" placeholder="Required" required> <!-- Pattern adapted from https://html5-tutorial.net/form-validation/validating-email/-->
 
-                            <label class="contact-item contact-label" for="phone">Phone Number</label>
-                            <input class="contact-item contact-input" type="text" id="phone" name="user_phone">
+                            <label class="contact-label" for="phone">Phone Number</label>
+                            <input class="contact-input" type="text" id="phone" name="user_phone" placeholder="(XXX)XXX-XXXX">
 
-                            <label class="contact-item contact-label" for="street">Street Address</label>
-                            <input class="contact-item contact-input" type="text" id="street" name="user_street">
+                            <label class="contact-label" for="street">Street Address</label>
+                            <input class="contact-input" type="text" id="street" name="user_street" placeholder="123 Example Blvd.">
 
-                            <label class="contact-item contact-label" for="city">City</label>
-                            <input class="contact-item contact-input" type="text" id="city" name="user_city">
+                            <label class="contact-label" for="city">City</label>
+                            <input class="contact-input" type="text" id="city" name="user_city" placeholder="Hometown">
 
-                            <label class="contact-state-lbl contact-item contact-label" for="state">State</label>
-                            <select class="contact-state-select contact-item contact-input" id="state" name="state"> <!-- Thank you to: https://www.freeformatter.com/usa-state-list-html-select.html -->
+                            <label class="contact-state-lbl contact-label" for="state">State</label>
+                            <select class="contact-state-select contact-input" id="state" name="state"> <!-- Thank you to: https://www.freeformatter.com/usa-state-list-html-select.html -->
                                     <option value="0" disabled hidden selected>Choose State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -99,11 +99,11 @@
                                     <option value="WI">Wisconsin</option>
                                     <option value="WY">Wyoming</option>
                             </select>	
-                            <label class="contact-item contact-label" for="zipcode">Zip Code</label>
-                            <input class="contact-item contact-input" type="text" id="zipcode" name="user_zipcode">
+                            <label class="contact-label" for="zipcode">Zip Code</label>
+                            <input class="contact-input" type="text" id="zipcode" name="user_zipcode" placeholder="00000">
                         </div>
                     </fieldset>
-                    <div class="signup-div-small"></div>
+                    <div class="line-div-small"></div>
                     <div class="newsletter-div">
                         <fieldset>
                             <legend class="newsletter-legend">Newsletter</legend>
@@ -140,10 +140,10 @@
                         </fieldset>
                     </div>
                     <div class="sign-up">
-                        
+                        <button id="submit" type="submit">Sign Up</button>
                     </div>
                 </form>
-            </section>
+            </div>
         </main>
 
         <footer class="main-footer">
